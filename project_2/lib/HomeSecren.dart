@@ -80,9 +80,7 @@ class HomeSecren extends StatelessWidget {
                         children: [
                           InkWell(
                             onTap: () {
-                             Navigator.push( context,
-                      MaterialPageRoute(
-                          builder: (context) => Topup()));
+                           
                             },
                             child: Container(
                               width: 140,
@@ -111,7 +109,9 @@ class HomeSecren extends StatelessWidget {
                           ),
                           InkWell(
                             onTap: () {
-                              
+                                Navigator.push( context,
+                      MaterialPageRoute(
+                          builder: (context) => Topup()));
                             },
                             child: Container(
                               width: 140,

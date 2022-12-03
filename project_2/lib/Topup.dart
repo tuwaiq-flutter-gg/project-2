@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:project_2/atistics.dart';
 
 class Topup extends StatelessWidget {
   Topup({super.key});
@@ -10,6 +11,7 @@ class Topup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+       backgroundColor: Color(0xffE5E5E5),
       body: ListView(
         children: [
           Padding(
@@ -225,7 +227,11 @@ class Topup extends StatelessWidget {
                 Icon(Icons.send_outlined)
               ],
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push( context,
+                      MaterialPageRoute(
+                          builder: (context) => Atistics()));
+            },
           ),
         ),
       ),
