@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 class StatsContainers extends StatefulWidget {
   final String day;
   final int lvl;
+  final Color colorw;
 
-  const StatsContainers({
+  StatsContainers({
     super.key,
+    required this.colorw,
     required this.day,
     required this.lvl,
   });
@@ -22,14 +24,13 @@ class _StatsContainersState extends State<StatsContainers> {
       children: [
         Text(widget.day),
         Container(
-          height:
-              (MediaQuery.of(context).size.height / 3.3) * (widget.lvl / 10),
+          height: (MediaQuery.of(context).size.height / 4) * (widget.lvl / 10),
           width: 35,
           margin: EdgeInsets.only(bottom: 15),
           decoration: BoxDecoration(
+            color: widget.colorw,
             borderRadius:
                 BorderRadius.circular(MediaQuery.of(context).size.width / 90),
-            color: Color.fromARGB(255, 166, 182, 189),
           ),
         ),
       ],

@@ -54,22 +54,27 @@ class Stats1 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   StatsContainers(
+                    colorw: Color.fromARGB(255, 166, 182, 189),
                     day: 'Mon',
                     lvl: 7,
                   ),
                   StatsContainers(
+                    colorw: Color.fromARGB(255, 166, 182, 189),
                     day: 'Tue',
                     lvl: 6,
                   ),
                   StatsContainers(
+                    colorw: Color.fromARGB(255, 166, 182, 189),
                     day: 'Wed',
                     lvl: 4,
                   ),
                   StatsContainers(
+                    colorw: Color.fromARGB(255, 21, 16, 43),
                     day: 'Thu',
                     lvl: 9,
                   ),
                   StatsContainers(
+                    colorw: Color.fromARGB(255, 166, 182, 189),
                     day: 'Fri',
                     lvl: 7,
                   ),
