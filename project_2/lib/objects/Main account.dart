@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:project_2/Pages/Statistics.dart';
+import 'package:project_2/Pages/Transformation.dart';
 
 class MainAccount extends StatelessWidget {
   const MainAccount({super.key});
@@ -39,7 +41,12 @@ class MainAccount extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       InkWell(
-                        onTap: () {}, //#----------------------------------
+                        onTap: () {
+                           Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Statist()));
+                        }, //#----------------------------------
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(8),
                           child: Container(
@@ -76,7 +83,12 @@ class MainAccount extends StatelessWidget {
                         width: 10,
                       ),
                       InkWell(
-                        onTap: () {}, //#----------------------------------
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => SendingMoney()));
+                        }, //#----------------------------------
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(8),
                           child: Container(

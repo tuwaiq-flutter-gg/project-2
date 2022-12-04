@@ -26,13 +26,20 @@ class _SendingMoneyState extends State<SendingMoney> {
               )),
         ],
         elevation: 0,
-        backgroundColor: Colors.white10,
+        backgroundColor: Color(0xFFE5E5E5),
       ),
       body: Container(
         child: ListView(
           children: [
-            Container(child: Center(child: Text("Sent to"))),
-            Center(child: Text("Agus Samsudin")),
+            Container(
+                child: Center(
+                    child: Text(
+              "Sent to",
+              style: TextStyle(color: Color(0xFF446388), fontSize: 14),
+            ))),
+            Center(
+                child: Text("Agus Samsudin",
+                    style: TextStyle(color: Color(0xFF283B51), fontSize: 18))),
             SizedBox(
               height: 30,
             ),
@@ -61,13 +68,16 @@ class _SendingMoneyState extends State<SendingMoney> {
                         )),
                       );
                     })),
+            SizedBox(
+              height: 30,
+            ),
             Center(
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Container(
                   height: 29,
                   width: 73,
-                  color: Colors.red,
+                  color: Color(0xFFDCE8F5),
                   child: Center(child: Text("USD")),
                 ),
               ),

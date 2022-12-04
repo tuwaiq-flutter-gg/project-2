@@ -17,21 +17,33 @@ class KeybordNumber extends StatelessWidget {
             height: 486,
             width: 375,
             color: Colors.white,
-            child: Row(
-              children: [
-                Container(
-                    color: Colors.yellow,
-                    alignment: Alignment.topLeft,
-                    height: 22,
-                    width: MediaQuery.of(context).size.width / 2,
-                    child: Text("!!!!Hi")),
-                // Icon(
-                //   Icons.note_alt_outlined,
-                //   color: Colors.black,
-                //   size: 30,//MediaQuery.of(context).size.width / 2,
-                // ),
-              ],
-            ),
+            child: Container(
+                color: Colors.white,
+                alignment: Alignment.topLeft,
+                height: 22,
+                width: MediaQuery.of(context).size.width / 2,
+                child: Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        width: 100,
+                        child: TextField(
+                            decoration: InputDecoration(
+                          labelText: 'Add note..',
+                          isDense: true,
+                        )),
+                      ),
+                      //Text("Add Note..."),
+                      Icon(
+                        Icons.note_alt_outlined,
+                        color: Colors.black,
+                        size: 30,
+                      ),
+                    ],
+                  ),
+                )),
           ),
         ),
         ClipRRect(
