@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:intl/intl.dart';
-import 'package:project_2/classes/account.dart';
 
 class MainCard extends StatelessWidget {
   const MainCard({super.key, required this.balance});

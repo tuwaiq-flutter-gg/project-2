@@ -3,14 +3,14 @@ import 'package:flutter_svg/svg.dart';
 import 'package:intl/intl.dart';
 
 import 'package:project_2/classes/account.dart';
-import 'package:project_2/components/key.dart';
+import 'package:project_2/components/digitKey.dart';
 import 'package:project_2/components/myIcon.dart';
 
 // test object
 const Account testAccount = Account(name: "Rakan", balance: 154723);
 
 class SendMoneyPage extends StatefulWidget {
-  SendMoneyPage({super.key});
+  const SendMoneyPage({super.key});
 
   @override
   State<SendMoneyPage> createState() => _SendMoneyPageState();
@@ -148,7 +148,8 @@ class _SendMoneyPageState extends State<SendMoneyPage> {
                                                   transferAmount += "1";
                                                 });
                                               },
-                                              child: DigitKey(keyValue: "1"),
+                                              child:
+                                                  const DigitKey(keyValue: "1"),
                                             ),
                                             InkWell(
                                               onTap: () {
@@ -156,7 +157,8 @@ class _SendMoneyPageState extends State<SendMoneyPage> {
                                                   transferAmount += "2";
                                                 });
                                               },
-                                              child: DigitKey(keyValue: "2"),
+                                              child:
+                                                  const DigitKey(keyValue: "2"),
                                             ),
                                             InkWell(
                                               onTap: () {
@@ -164,7 +166,8 @@ class _SendMoneyPageState extends State<SendMoneyPage> {
                                                   transferAmount += "3";
                                                 });
                                               },
-                                              child: DigitKey(keyValue: "3"),
+                                              child:
+                                                  const DigitKey(keyValue: "3"),
                                             ),
                                             InkWell(
                                               onTap: () {
@@ -172,7 +175,8 @@ class _SendMoneyPageState extends State<SendMoneyPage> {
                                                   transferAmount += "4";
                                                 });
                                               },
-                                              child: DigitKey(keyValue: "4"),
+                                              child:
+                                                  const DigitKey(keyValue: "4"),
                                             ),
                                             InkWell(
                                               onTap: () {
@@ -180,7 +184,8 @@ class _SendMoneyPageState extends State<SendMoneyPage> {
                                                   transferAmount += "5";
                                                 });
                                               },
-                                              child: DigitKey(keyValue: "5"),
+                                              child:
+                                                  const DigitKey(keyValue: "5"),
                                             ),
                                             InkWell(
                                               onTap: () {
@@ -188,7 +193,8 @@ class _SendMoneyPageState extends State<SendMoneyPage> {
                                                   transferAmount += "6";
                                                 });
                                               },
-                                              child: DigitKey(keyValue: "6"),
+                                              child:
+                                                  const DigitKey(keyValue: "6"),
                                             ),
                                             InkWell(
                                               onTap: () {
@@ -196,7 +202,8 @@ class _SendMoneyPageState extends State<SendMoneyPage> {
                                                   transferAmount += "7";
                                                 });
                                               },
-                                              child: DigitKey(keyValue: "7"),
+                                              child:
+                                                  const DigitKey(keyValue: "7"),
                                             ),
                                             InkWell(
                                               onTap: () {
@@ -204,7 +211,8 @@ class _SendMoneyPageState extends State<SendMoneyPage> {
                                                   transferAmount += "8";
                                                 });
                                               },
-                                              child: DigitKey(keyValue: "8"),
+                                              child:
+                                                  const DigitKey(keyValue: "8"),
                                             ),
                                             InkWell(
                                               onTap: () {
@@ -212,7 +220,8 @@ class _SendMoneyPageState extends State<SendMoneyPage> {
                                                   transferAmount += "9";
                                                 });
                                               },
-                                              child: DigitKey(keyValue: "9"),
+                                              child:
+                                                  const DigitKey(keyValue: "9"),
                                             ),
                                             InkWell(
                                               onTap: () {
@@ -220,7 +229,8 @@ class _SendMoneyPageState extends State<SendMoneyPage> {
                                                   // transferAmount += ",";
                                                 });
                                               },
-                                              child: DigitKey(keyValue: ","),
+                                              child:
+                                                  const DigitKey(keyValue: ","),
                                             ),
                                             InkWell(
                                               onTap: () {
@@ -228,7 +238,8 @@ class _SendMoneyPageState extends State<SendMoneyPage> {
                                                   transferAmount += "0";
                                                 });
                                               },
-                                              child: DigitKey(keyValue: "0"),
+                                              child:
+                                                  const DigitKey(keyValue: "0"),
                                             ),
                                             InkWell(
                                               onTap: () {
@@ -244,8 +255,8 @@ class _SendMoneyPageState extends State<SendMoneyPage> {
                                                   }
                                                 });
                                               },
-                                              child:
-                                                  DigitKey(keyValue: "delete"),
+                                              child: const DigitKey(
+                                                  keyValue: "delete"),
                                             ),
                                           ],
                                         ),

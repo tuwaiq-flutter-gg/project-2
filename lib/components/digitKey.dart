@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 class DigitKey extends StatelessWidget {
-  DigitKey({super.key, required this.keyValue});
+  const DigitKey({super.key, required this.keyValue});
 
   final String keyValue;
   @override

@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:project_2/Pages/homePage.dart';
-import 'package:project_2/Pages/sendMoneyPage.dart';
-import 'package:project_2/classes/account.dart';
-import 'Pages/statistics.dart';
 
 void main() {
   // disable landscape mode

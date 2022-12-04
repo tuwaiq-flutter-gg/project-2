@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../Pages/sendMoneyPage.dart';
@@ -39,7 +38,7 @@ class recentSendMoneyMainCard extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => SendMoneyPage(),
+                        builder: (context) => const SendMoneyPage(),
                       ),
                     );
                   },

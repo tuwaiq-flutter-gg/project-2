@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:project_2/Pages/statistics.dart';
 
+import 'package:project_2/Pages/statistics.dart';
 import 'package:project_2/classes/account.dart';
 import 'package:project_2/components/myIcon.dart';
 import 'package:project_2/components/mainCard.dart';
