@@ -4,9 +4,12 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 class stats extends StatelessWidget {
-  const stats({super.key, required this.day, required this.size});
+  const stats(
+      {super.key, required this.day, required this.size, required this.aa});
   final String day;
   final double size;
+  final Color aa;
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -18,7 +21,7 @@ class stats extends StatelessWidget {
           width: 35,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(5),
-            color: Color(0xffD3DDE9),
+            color:aa,
           ),
         ),
         spaces(size: 5),

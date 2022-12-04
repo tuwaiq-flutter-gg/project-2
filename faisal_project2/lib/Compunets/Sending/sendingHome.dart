@@ -7,15 +7,16 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 class sendingHome extends StatefulWidget {
-  sendingHome({super.key});
-  final TextEditingController control = TextEditingController();
+  sendingHome({
+    super.key,
+    required this.control,
+  });
+  final TextEditingController control;
   @override
   State<sendingHome> createState() => _sendingHomeState();
 }
 
 class _sendingHomeState extends State<sendingHome> {
-  final TextEditingController control = TextEditingController();
-
   @override
   Widget build(BuildContext context) {
     return (ListView(
@@ -28,7 +29,7 @@ class _sendingHomeState extends State<sendingHome> {
             spaces(size: 50),
             Center(
               child: TextField(
-                controller: control,
+                controller: widget.control,
                 style: TextStyle(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
@@ -47,7 +48,7 @@ class _sendingHomeState extends State<sendingHome> {
                     ),
                     context: context,
                     builder: (context) => (keyboard(
-                      control: control,
+                      control: widget.control,
                     )),
                   );
                 },

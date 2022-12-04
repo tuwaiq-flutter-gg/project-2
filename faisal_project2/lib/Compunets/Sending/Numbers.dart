@@ -23,7 +23,9 @@ class numbers extends StatelessWidget {
       ),
       child: TextButton(
         onPressed: () {
-          control.text += number.toString();
+          setstate() {
+            control.text += number.toString();
+          }
         },
         child: Center(
           child: Text(

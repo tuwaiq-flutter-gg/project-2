@@ -6,7 +6,8 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 class fulstat extends StatelessWidget {
-  const fulstat({super.key});
+  fulstat({super.key});
+  Color aa = Color(0xffD3DDE9);
 
   @override
   Widget build(BuildContext context) {
@@ -51,11 +52,31 @@ class fulstat extends StatelessWidget {
                 SizedBox(
                   width: 5,
                 ),
-                stats(day: "Sunday", size: 120),
-                stats(day: "Monday", size: 150),
-                stats(day: "Tuesday", size: 180),
-                stats(day: "Wensdey", size: 90),
-                stats(day: "Thurseday", size: 200),
+                stats(
+                  day: "Sunday",
+                  size: 120,
+                  aa: aa,
+                ),
+                stats(
+                  day: "Monday",
+                  size: 150,
+                  aa: aa,
+                ),
+                stats(
+                  day: "Tuesday",
+                  size: 180,
+                  aa: Colors.black,
+                ),
+                stats(
+                  day: "Wensdey",
+                  size: 90,
+                  aa: aa,
+                ),
+                stats(
+                  day: "Thurseday",
+                  size: 200,
+                  aa: aa,
+                ),
                 SizedBox(
                   width: 5,
                 ),

@@ -20,7 +20,7 @@ class shortstat extends StatelessWidget {
             children: [
               Icon(
                 Icons.flight_land,
-                color: dd,
+                color: Colors.black,
               ),
               spaces(size: 10),
               Text("Income"),
@@ -43,7 +43,7 @@ class shortstat extends StatelessWidget {
             children: [
               Icon(
                 Icons.flight_takeoff,
-                color: dd,
+                color: Colors.black,
               ),
               spaces(size: 10),
               Text("Expenditure"),

@@ -5,8 +5,8 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 class Sending extends StatelessWidget {
-  const Sending({super.key});
-
+   Sending({super.key});
+final TextEditingController control = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return (Scaffold(
@@ -37,7 +37,7 @@ class Sending extends StatelessWidget {
           ),
         ),
       ),
-      body: (sendingHome()),
+      body: (sendingHome(control: control,)),
     ));
   }
 }
