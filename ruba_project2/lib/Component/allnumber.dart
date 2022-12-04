@@ -10,7 +10,8 @@ class allnumber extends StatelessWidget {
   Widget build(BuildContext context) {
     return  
     Container(
-      height:(MediaQuery.of(context).size.height/2)-30, 
+      // height:(MediaQuery.of(context).size.height/2)-30,
+      height: 350, 
       child: Column(mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
         children: [
