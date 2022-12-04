@@ -13,7 +13,7 @@ class RecentSendCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Recent Activity',
+            'Recent Send Money',
             style: TextStyle(
               color: Color(0xff283B51),
               fontSize: 18,
