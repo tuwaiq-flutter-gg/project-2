@@ -31,6 +31,9 @@ class _SendingMoneyState extends State<SendingMoney> {
       body: Container(
         child: ListView(
           children: [
+            SizedBox(
+              height: 30,
+            ),
             Container(
                 child: Center(
                     child: Text(
