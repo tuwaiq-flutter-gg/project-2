@@ -226,11 +226,14 @@ class _SendMoneyPageState extends State<SendMoneyPage> {
                                             InkWell(
                                               onTap: () {
                                                 setState(() {
-                                                  // transferAmount += ",";
+                                                  if (!transferAmount
+                                                      .contains(".")) {
+                                                    transferAmount += ".";
+                                                  }
                                                 });
                                               },
                                               child:
-                                                  const DigitKey(keyValue: ","),
+                                                  const DigitKey(keyValue: "."),
                                             ),
                                             InkWell(
                                               onTap: () {
